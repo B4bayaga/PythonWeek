@@ -1,0 +1,11 @@
+Criando ambientes virtuais
+
+A criação de ambientes virtuais é feita executando o comando venv:
+
+python3 -m venv /path/to/new/virtual/environment
+
+A execução desse comando cria o diretório de destino (criando qualquer diretório pai que ainda não exista) e coloca um arquivo pyvenv.cfg 
+nele com uma chave home apontando para a instalação do Python a partir da qual o comando foi executado (um nome comum para o diretório de destino é .venv). 
+Ele também cria um subdiretório bin (ou Scripts no Windows) que contém uma cópia/link simbólico de binário/binários do Python (conforme apropriado para a 
+plataforma ou argumentos usados no momento da criação do ambiente). Ele também cria um subdiretório (inicialmente vazio) lib/pythonX.Y/site-packages 
+(no Windows, é Lib\site-packages). Se um diretório existente for especificado, ele será reutilizado.
